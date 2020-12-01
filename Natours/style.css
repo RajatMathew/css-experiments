@@ -105,6 +105,6 @@ body {
 a{
     outline: none;
 }
-a:hover {
-    outline: none;
+a:focus {
+    outline: none !important;
 }
