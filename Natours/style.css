@@ -23,6 +23,7 @@ body {
     background-position: center;
     clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
     position: relative;
+    animation: rotateClip 30s infinite ease-in-out;
 
 }
 
@@ -58,7 +59,7 @@ body {
     border-radius: 50px;
     display: inline-block;
     transition: all 0.2s;
-    backface-visibility: hidden;
+    //backface-visibility: hidden;
     
 }
 
@@ -79,4 +80,24 @@ body {
 .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+@keyframes rotateClip {
+    0% {
+        
+            clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
+    }
+        
+    50% {
+        
+            clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 75vh);
+            //clip-path: circle();
+        
+    }
+
+    100% {
+        
+        clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
+    }
 }
