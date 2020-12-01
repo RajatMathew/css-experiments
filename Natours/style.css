@@ -59,7 +59,7 @@ body {
     border-radius: 50px;
     display: inline-block;
     transition: all 0.2s;
-    //backface-visibility: hidden;
+    backface-visibility: hidden;
     
 }
 
@@ -118,4 +118,25 @@ a:focus {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     cursor: default;
+}
+
+
+@media (hover: none) {
+    .btn {
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 50px;
+        display: inline-block;
+        transition: all 0.2s;
+        backface-visibility: hidden;
+        
+    }
+    
+    .btn-white {
+        background-color: white;
+    }
+    
+    .btn:link, .btn:visited {
+        color: #777;
+    }
 }
