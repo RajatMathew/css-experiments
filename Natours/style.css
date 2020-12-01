@@ -101,3 +101,10 @@ body {
         clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
     }
 }
+
+a{
+    outline: none;
+}
+a:hover {
+    outline: none;
+}
