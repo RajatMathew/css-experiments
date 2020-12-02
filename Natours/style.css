@@ -1,3 +1,8 @@
+@font-face {
+    src: url(fonts/CS.ttf);
+    font-family: CS;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 }
 
 body {
-    font-family: Circular Std Bold;
+    font-family: CS;
     font-weight: 100;
     line-height: 1.7;
     font-size: 16px;
@@ -17,15 +22,17 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(to right bottom, #fa8086d3, #fa7077e7), url(images/mac_wall.jpg);
+    background-image: linear-gradient(to right bottom, #56ab2f, #a8e063);
     background-size: cover;
     height: 95vh;
+    text-align: center;
     background-position: center;
     clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
     position: relative;
-    animation: rotateClip 30s infinite ease-in-out;
+    animation: rotateClip 10s infinite ease-out;
 
 }
+
 
 .centre {
     position: absolute;
@@ -45,12 +52,17 @@ body {
     font-size: 32px;
     display: block;
     letter-spacing: 20px;
+    animation: moveInFromLeft 2s 0.5s;
+    animation-fill-mode: backwards;
 }
 
 .sub {
     font-size: 16px;
     display: block;
     letter-spacing: 4px;
+    animation: moveInFromRight 2s 0.5s;
+    animation-fill-mode: backwards;
+    //float: left;
 }
 
 .btn {
@@ -60,6 +72,9 @@ body {
     display: inline-block;
     transition: all 0.2s;
     backface-visibility: hidden;
+    animation: moveInFromBottom 2s 0.5s;
+    animation-fill-mode: backwards;
+    
     
 }
 
@@ -87,18 +102,24 @@ body {
     0% {
         
             clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
+            
+            
     }
         
     50% {
         
             clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 75vh);
             //clip-path: circle();
+            
+            
         
     }
 
     100% {
         
         clip-path: polygon(0 0, 100% 10vh, 100% 75vh, 0 100%);
+        
+        
     }
 }
 
@@ -130,6 +151,7 @@ a:focus {
         transition: all 0.2s;
         backface-visibility: hidden;
         
+        
     }
     
     .btn-white {
@@ -138,5 +160,39 @@ a:focus {
     
     .btn:link, .btn:visited {
         color: #777;
+    }
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveInFromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
