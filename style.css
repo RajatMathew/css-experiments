@@ -1,7 +1,13 @@
+@font-face {
+  src: url(Natours/fonts/CS.ttf);
+  font-family: CS;
+}
+
 .pd-l-30 {
   padding-left: 30px;
+  padding-top: 20px;
 }
 
 a, h1 {
-  font-family: Helvetica, sans-serif;
+  font-family: CS, sans-serif;
 }
