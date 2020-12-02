@@ -3,22 +3,27 @@
     font-family: CS;
 }
 
-* {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
 
 }
 
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: CS;
     font-weight: 100;
     line-height: 1.7;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
+
 }
 
 .header {
@@ -44,22 +49,22 @@ body {
 .header-text {
     text-transform: uppercase;
     color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
     
 }
 
 .main {
-    font-size: 32px;
+    font-size: 3.2rem;
     display: block;
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
     animation: moveInFromLeft 2s 0.5s;
     animation-fill-mode: backwards;
 }
 
 .sub {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: block;
-    letter-spacing: 4px;
+    letter-spacing: .4rem;
     animation: moveInFromRight 2s 0.5s;
     animation-fill-mode: backwards;
     //float: left;
@@ -67,8 +72,8 @@ body {
 
 .btn {
     text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 50px;
+    padding: 1.5rem 4rem;
+    border-radius: 5rem;
     display: inline-block;
     transition: all 0.2s;
     backface-visibility: hidden;
@@ -87,14 +92,14 @@ body {
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
 
@@ -142,11 +147,11 @@ a:focus {
 }
 
 
-@media (hover: none) {
+/* @media (hover: none) {
     .btn {
         text-decoration: none;
-        padding: 15px 40px;
-        border-radius: 50px;
+        padding: 1.5rem 4rem;
+        border-radius: 5rem;
         display: inline-block;
         transition: all 0.2s;
         backface-visibility: hidden;
@@ -161,11 +166,11 @@ a:focus {
     .btn:link, .btn:visited {
         color: #777;
     }
-}
+} */
 
 @keyframes moveInFromLeft {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
         opacity: 0;
     }
     100% {
@@ -176,7 +181,7 @@ a:focus {
 
 @keyframes moveInFromRight {
     0% {
-        transform: translateX(100px);
+        transform: translateX(10rem);
         opacity: 0;
     }
     100% {
@@ -188,11 +193,18 @@ a:focus {
 
 @keyframes moveInFromBottom {
     0% {
-        transform: translateY(100px);
+        transform: translateY(10rem);
         opacity: 0;
     }
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 640px) {
+    html {
+        font-size: 50%;
     }
 }
