@@ -11,3 +11,8 @@
 a, h1 {
   font-family: CS, sans-serif;
 }
+
+a {
+  //text-decoration: none;
+  color: black;
+}
