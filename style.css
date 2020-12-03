@@ -13,11 +13,13 @@ html {
 
 a, h1 {
   font-family: CS, sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
   //text-decoration: none;
   color: black;
-  font-size: 125%;
+  
 }
+
 
