@@ -47,7 +47,7 @@ background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 
 background: rgb(2,0,36);
 background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-
+background-size: 400% 400%;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,16 +58,29 @@ background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: gradAnim 5s ease infinite;
   }
   
   a:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(294deg, rgba(9,9,121,1) 0%,rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    transition: all 5s;
+    
+    
   }
+
+
+
+
+@keyframes gradAnim {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
   * {
     
@@ -96,3 +109,22 @@ background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; */
 }
 
 
+
+body {
+  background-color: black;
+}
+
+
+h1 {
+  color: #eee;
+  //text-align: center;
+  padding: 0;
+  font-family: Inconsolata Light;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
+.nat {
+  background-color: #000;
+}
