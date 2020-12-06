@@ -3,15 +3,11 @@
     font-family: CS;
   }
   
-
-
   * {
       margin: 0;
       padding: 0;
   }
-  html {
-    //font-size: 62.5%;
-  }
+ 
   .pd-l-30 {
     padding-left: 2rem;
     padding-top: 2rem;
@@ -27,30 +23,13 @@
     color: cornflowerblue;
     font-size: 5rem;
 
-    background: -webkit-linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
-    linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
-  background-size: 100px 100px;
-  background-color: #EC173A;
 
+    background: rgb(2,0,36);
+    background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-size: 400% 400%;
 
-  background:
-  radial-gradient(circle, transparent 20%, slategray 20%,
-    slategray 80%, transparent 80%, transparent),
-  radial-gradient(circle, transparent 20%, slategray 20%,
-    slategray 80%, transparent 80%, transparent) 50px 50px,
-  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
-  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
-background-color: slategray;
-background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
-
-background: rgb(2,0,36);
-background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-background-size: 400% 400%;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 
     text-align: center;
@@ -61,11 +40,6 @@ background-size: 400% 400%;
     animation: gradAnim 5s ease infinite;
   }
   
-  a:hover {
-    
-    
-  }
-
 
 
 
@@ -82,20 +56,7 @@ background-size: 400% 400%;
 }
 
 
-  * {
-    
 
-    /* background:
-  radial-gradient(circle, transparent 20%, slategray 20%,
-    slategray 80%, transparent 80%, transparent),
-  radial-gradient(circle, transparent 20%, slategray 20%,
-    slategray 80%, transparent 80%, transparent) 50px 50px,
-  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
-  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
-background-color: slategray;
-background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; */
-  //background-repeat: no-repeat;
-  }
 
   .nat {
 
@@ -105,7 +66,9 @@ background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; */
     letter-spacing: -5px;
     
     box-sizing: border-box;
-
+    
+    background-color: #111;
+    animation: bottomToTop 1s ease-out;
 }
 
 
@@ -117,18 +80,14 @@ body {
 
 h1 {
   color: #eee;
-  //text-align: center;
-  padding: 0;
+  
   font-family: 'Inconsolata', monospace;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: normal;
 }
 
-.nat {
-  background-color: #000;
-  animation: bottomToTop 1s ease-out;
-}
+
 
 @keyframes bottomToTop {
   0% {
