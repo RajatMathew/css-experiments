@@ -32,7 +32,7 @@
     -webkit-text-fill-color: transparent;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 
-    text-align: center;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +62,7 @@
 
     height: 100vh;
     width: 100vw;
-    
+    position: relative;
     letter-spacing: -5px;
     
     box-sizing: border-box;
@@ -91,7 +91,7 @@ h1 {
 
 @keyframes bottomToTop {
   0% {
-    transform: translateY(40px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
