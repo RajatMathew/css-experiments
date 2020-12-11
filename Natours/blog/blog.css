@@ -1,0 +1,87 @@
+@font-face {
+    src: url(./fonts/CS.ttf);
+    font-family: CS;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: CS;
+    font-weight: 100;
+    line-height: 1.7;
+    font-size: 1.6rem;
+    color: #777;
+    padding: 3rem;
+    box-sizing: border-box;
+
+}
+
+
+
+@media (max-width: 640px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 632px)
+{
+    .blog {
+        padding: 5vw;
+        width: fixed;
+        box-sizing: border-box;
+        
+        
+    }
+}
+
+@media (min-width: 1024px)
+{
+    .blog {
+        padding-left: 25vw;
+        padding-right: 25vw;
+        
+        
+    }
+}
+
+
+.blog {
+    //position: relative;
+    //text-align: justify;
+}
+   
+.blog-img {
+    
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+    border-radius: 7px;
+
+}
+
+.blog-heading {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 40px;
+    color: #333;
+    font-family: Segoe UI Semibold;
+}
+
+.blog-text {
+    //text-align: justify;
+    font-size: x-large;
+    color: #333;
+    font-family: Segoe UI Semibold;
+}
